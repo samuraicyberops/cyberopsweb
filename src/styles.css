@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 body {
-  background-color: #121212;
-  color: #00ffcc;
-  font-family: "Arial", sans-serif;
+  background: #121212;
+  color: #d1d1d1;  /* Light gray for text */
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
+  text-align: center;
+}
+
+/* Gradient Text Effect */
+h1, h2 {
+  font-weight: 700;
+  background: linear-gradient(90deg, #4a90e2, #9b59b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar {
@@ -15,13 +26,15 @@ body {
 }
 
 .nav-links a {
-  color: #00ffcc;
+  color: #4a90e2; /* Blue link color */
   margin: 0 15px;
   text-decoration: none;
   font-size: 18px;
+  font-weight: 500;
 }
 
 .page {
   padding: 20px;
-  text-align: center;
+  max-width: 800px;
+  margin: auto;
 }
